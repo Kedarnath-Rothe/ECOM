@@ -1,0 +1,66 @@
+footer {
+    animation: animate 10s ease-in-out infinite;
+  background: -webkit-repeating-linear-gradient(
+    -60deg,
+    #000000,
+    #0000,
+    #333233,
+    #63463c,
+    #19151b,
+    #000000,
+    #070308
+  );
+    color: #fff; 
+    text-align: center;
+
+    margin-bottom: -1rem;
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+    25% {
+      background-position: 100% 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    margin: auto;
+    font-weight: bold;
+    margin-top: -1rem;
+  }
+  
+  .footer-logo p {
+    margin: -1rem;
+  }
+  
+  .social-icons {
+    margin-top: 30px; /* Add margin to separate the icons from the text */
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 3em; /* Increase the font size for larger icons */
+    margin-right: 25px; /* Adjust spacing as needed */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    color: #55acee; /* Change color to the desired hover color */
+  }
+  
