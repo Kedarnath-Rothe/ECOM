@@ -90,7 +90,7 @@ const Service = () => {
                     return (
                         <div className="card" key={index}>
                             <div className="card-img">
-                                <img src={`../../productimages/${curElem.image}`} alt={curElem.productname} />
+                                <img src={`images/productimages/${curElem.image}`} alt={curElem.productname} />
                             </div>
                             <hr/>
                             <div className="card-details">
