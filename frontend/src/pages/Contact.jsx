@@ -39,7 +39,7 @@ const Contact = () => {
         e.preventDefault();
     
         try {
-            const response = await fetch("http://localhost:8080/api/form/contact", {
+            const response = await fetch("https://ecom-back-vert.vercel.app/api/form/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

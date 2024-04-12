@@ -38,7 +38,7 @@ const UserCart = () => {
 
     const handleCheckout = async (product) => {
         try {
-            await axios.put(`http://localhost:8080/api/data/products/${product._id}`, {
+            await axios.put(`https://ecom-back-vert.vercel.app/api/data/products/${product._id}`, {
                 cust_id: "",
                 cust_name: "",
                 booked: false,
@@ -64,7 +64,7 @@ const UserCart = () => {
         });
 
         try {
-            await axios.post("http://localhost:8080/api/data/usercart", { updatedProducts });
+            await axios.post("https://ecom-back-vert.vercel.app/api/data/usercart", { updatedProducts });
             console.log("Updated schema for all products");
             toast.success("Products bought successfully!");
             navigate('/userhome');

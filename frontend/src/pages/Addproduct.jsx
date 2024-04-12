@@ -56,7 +56,7 @@ const Addproduct = () => {
             formData.append("image", product.image);
             formData.append("category", product.category); // Append category to formData
 
-            const response = await fetch('http://localhost:8080/api/data/addproduct', {
+            const response = await fetch('https://ecom-back-vert.vercel.app/api/data/addproduct', {
                 method: "POST",
                 body: formData,
             });

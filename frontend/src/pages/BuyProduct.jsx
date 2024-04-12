@@ -30,7 +30,7 @@ const BuyProduct = () => {
     useEffect(() => {
         const getSingleProductData = async () => {
             try {
-                const response = await fetch(`http://localhost:8080/api/auth/bookproduct/${params.id}`, {
+                const response = await fetch(`https://ecom-back-vert.vercel.app/api/auth/bookproduct/${params.id}`, {
                     method: "GET",
                     headers: {
                         Authorization: authorizationToken,
@@ -74,7 +74,7 @@ const BuyProduct = () => {
 
             const updatedProductData = { ...productData, booked: false };
 
-            const response = await fetch(`http://localhost:8080/api/auth/bookproduct/update/${params.id}`, {
+            const response = await fetch(`https://ecom-back-vert.vercel.app/api/auth/bookproduct/update/${params.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",

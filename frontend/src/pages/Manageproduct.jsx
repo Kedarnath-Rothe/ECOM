@@ -21,7 +21,7 @@ const Manageproduct = () => {
 
     const deleteProduct = async (id) => {
         try {
-            const response = await fetch(`http://localhost:8080/api/admin/products/delete/${id}`, {
+            const response = await fetch(`https://ecom-back-vert.vercel.app/api/admin/products/delete/${id}`, {
                 method: "DELETE",
                 headers: {
                     Authorization: authorizationToken,

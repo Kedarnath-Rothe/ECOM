@@ -17,7 +17,7 @@ const ProductUpdate = () => {
 
     const getSingleProductData = async () => {
         try {
-            const response = await fetch(`http://localhost:8080/api/admin/products/${params.id}`, {
+            const response = await fetch(`https://ecom-back-vert.vercel.app/api/admin/products/${params.id}`, {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,
@@ -47,7 +47,7 @@ const ProductUpdate = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:8080/api/admin/products/update/${params.id}`, {
+            const response = await fetch(`https://ecom-back-vert.vercel.app/api/admin/products/update/${params.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",

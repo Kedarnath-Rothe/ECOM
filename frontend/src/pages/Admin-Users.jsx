@@ -12,7 +12,7 @@ import { Link, Navigate } from 'react-router-dom';
 
   const getAllUsersData = async() => {
     try{
-      const response = await fetch("http://localhost:8080/api/admin/users", {
+      const response = await fetch("https://ecom-back-vert.vercel.app/api/admin/users", {
         method : "GET",
         headers : {
           Authorization : authorizationToken,
@@ -37,7 +37,7 @@ import { Link, Navigate } from 'react-router-dom';
   //Delete the use on delete button
   const deleteUser = async(id) => {
     try{
-      const response = await fetch(`http://localhost:8080/api/admin/users/delete/${id}`, {
+      const response = await fetch(`https://ecom-back-vert.vercel.app/api/admin/users/delete/${id}`, {
         method : "DELETE",
         headers : {
           Authorization : authorizationToken,
