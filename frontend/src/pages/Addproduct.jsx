@@ -181,8 +181,7 @@ const Addproduct = () => {
                                                 name="image"
                                                 id="image"
                                                 accept="image/*"
-                                                onChange={handleInput}
-                                                required
+                                                onChange={handleInput} 
                                             />
                                         </div>
 

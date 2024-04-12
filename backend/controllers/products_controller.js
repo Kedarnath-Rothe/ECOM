@@ -13,7 +13,7 @@ const addproduct = async (req, res) => {
         }
 
         // Set default image if not provided in request
-        let image = req.file ? req.file.filename : 'default_product_image.png';
+        let image = req.file ? req.file.filename : 'default_product_image.jpg';
 
         // Create new Product instance
         const productCreated = await Product.create({ productname, price, username, phone, details, image, category });
